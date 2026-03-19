@@ -88,7 +88,7 @@ body {
 
 .items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   justify-items: center;
   gap: 20px;
 }
@@ -205,6 +205,7 @@ body {
 }
 
 .link {
+  display: block;
   color: #1d3e3e;
   font-size: 25px;
 
@@ -229,6 +230,18 @@ body {
   width: 100%;
 }
 
+.link_variant_heading {
+  font-size: inherit;
+}
+
+.link_variant_heading:hover {
+  opacity: 0.8;
+}
+
+.link_variant_heading::after {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .page {
     padding: 20px 0;
@@ -243,7 +256,7 @@ body {
   }
 
   .heading_level_1 {
-    font-size: 20vw;
+    font-size: 19vw;
   }
 
   .portfolio-content {
